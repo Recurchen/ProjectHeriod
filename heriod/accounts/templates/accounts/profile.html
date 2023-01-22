@@ -1,0 +1,9 @@
+
+
+<h1> Profile edit get: {{user.username}} </h1>
+<h2> {{user.email}}</h2>
+
+<form >
+    {% csrf_token %}
+    {{ form.as_p }}
+ </form>
