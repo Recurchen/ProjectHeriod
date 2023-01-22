@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- <link rel="stylesheet" href="./style.css"> -->
 <head>
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
-    <t1>HERIOD</t1>
-    <form method="post">
+<body style="background-color:#6AB2F4;">
+    <t1 style = "color: white; position:absolute; left: 40%; top: 5%; 
+        font-family: sans-serif; font-weight: 400; font-size: x-large;">HERiod</t1>
+    <form style = "position:absolute; top: 10%; left: 30%; color: white; 
+    font-family: sans-serif; font-weight: 100" method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="submit">
